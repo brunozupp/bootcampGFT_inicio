@@ -1,0 +1,151 @@
+1 - Introdução ao Git -----------------------------------------------
+
+Git - sistema de versionamento de código distribuido. Ajuda a monitorar diferentes versões do código dentro da máquina.
+Linus Torvalds (criador)
+
+Github - é onde guarda o versionamento
+
+Beneficios
+- Controle de versão
+- Armazenamento em nuvem
+- Trabalho em equipe
+- Melhorar seu código
+- Reconhecimento
+
+2 - Navegação via command line interface e instalação ---------------
+
+O Git é apenas CLI (terminal), não tem interface gráfica. (Hoje em dia já existe sistemas que interagem com o git e fornece uma interface gráfica).
+
+Alguns comandos para o windows do terminal
+- 'cd nomePasta' - navegação
+- 'cd /' -> ir para a raiz do meu diretório C
+- 'dir' - listar os diretórios da pasta atual (ls)
+- 'mkdir nomePasta' - criar uma pasta
+- del/rmdir
+- del se restringe apenas a deletar arquivos, então 'del workspace' vai deletar todos os arquivos dentro de workspace, mas não a pasta. Posso deletar arquivos especificos só colocando o nome deles na frente do comando.
+- 'rmdir nomePasta' é o comando que deleta a pasta (apenas se tiver vazia, se contém arquivos, não deleta)
+- 'rmdir nomePasta /S /Q' - deleta a pasta mesmo se essa contém arquivos dentro
+- cls - limpa o terminal (ctrl + l -> linux)
+- echo - devolve o que eu digitei
+- echo hello world > hello.txt (o > é um redirecionamento de fluxo que vai pegar o output hello world e criar o arquivo hello.txt)
+rm -rf (Para deletar no linux, o r é recursivo e o f (force) é para não aparecer nenhum tipo de confirmação e ir direto)
+TAB - Autocompletar
+
+Windows 10 - Windows subsystem for linux -> sistema linux rodando dentro do windows
+
+Os sistemas operacionais tem diferentes simbolos para quebra de linha
+
+3 - Entendendo como o Git funciona por baixo dos panos --------------
+
+- SHA1
+* É um algoritmo que vai pegar o arquivo e vai criptografar
+* Secure Hash Algorithm (Algoritmo de Hash Seguro) é um conjunto de funções hash criptográficas projetadas pela NSA (Agência de Segurança Nacioanl dos EUA).
+* A encriptação gera um conjunto de caracteres identificador de 40 dígitos, sendo único
+* É uma forma curta de representar um arquivo. Pode ser um texto de 80 folhas, o git vai gerar um hash de 40 dígitos
+
+'openssl sha1 nomeArquivo.extensao': criptografa o arquivo usando o sha1
+
+- Objetos fundamentais
+Os três objetos básicos do git responsáveis pelo versionamento do código são:
+Blobs,Trees,Commits
+
+*Blobs: os objetos especificos do git, do jeito que o git lida com eles é através de objetos e ficam guardados dentro do blob e esse objeto contém metadados dentro dele. Então o objeto blob vai ter o tipo do objeto, o tamanho do arquivo/string, uma barra ao contrário com o 0 (\0) e o conteúdo do arquivo/string
+--stdin -> função espera um arquivo mas estamos falando que vamos passar texto
+
+Exemplos:
+echo 'conteudo' | git hash-object --stdin
+fc31e91b26cf85a55e072476de7f263c89260eb1
+
+echo -e 'conteudo' | openssl sha1
+(stdin)= 65b0d0dda479cc03cce59528e28961e498155f5c
+
+// Passando os metadados para a string. O tamanho sempre mais 1
+echo -e 'blob 9\0conteudo' | openssl sha1
+(stdin)= fc31e91b26cf85a55e072476de7f263c89260eb1
+
+O git armazena metadados nesses objetos. O blob contém metadados do git que são o tipo do objeto, o tamanho do arquivo/string, uma barra ao contrário com o 0 (\0) e o conteúdo do arquivo/string
+
+* Tree: as trees armazenam blobs. Então é uma crescente, o blob sendo o bloco básico de composição, a tree armazenando e apontando para blobs diferentes.
+A tree tbm contém metadados. Tem a \0, aponta para um blob que tem o sha1 e e guarda o nome do arquivo. (O Blob não guarda o nome do arquivo).
+A tree é responsável por montar toda a estrutura de onde está os arquivos. Pode apontar tanto para blobs quanto para outras árvores (um diretório pode conter outro diretorio).
+
+Os blobs tem o sha1 do arquivo
+As tress apontam para esses blobs e tem um sha1 para os metadados das árvores. Então se mudar uma coisa, o conteúdo do sha1 muda
+
+* Commit: o objeto que vai juntar tudo. Aponta para uma tree, aponta para um parente (último commit realizado antes dele), um autor, uma mensagem e o tempo de quando foi chamado
+
+O SHA1 desse commit é o hash de toda essa informação.
+
+- Sistema distribuído: A versão mais recente que está no servidor, tanto a mais recente que está nas máquinas dos devs são a mesma, então se der problema no github, precisa acontecer algo com os devs, pq não vai se perder, já que as versões que eles tem tbm são confiavéis, por conta da estrutura.
+
+- Segurança
+
+4 - Primeiros comandos com Git --------------------------------------
+
+- git init -> iniciar o repositório do git
+
+pasta .git = ela não aparece pq é uma pasta oculta, uma pasta gerencial do git, que fica todo o código do git, onde o git versiona os objetos que serão manipulados
+
+ls -a - flag -a para mostrar arquivos/pastas ocultos
+
+- git add -> mover arquivos e dar inicio ao versionamento
+
+- git commit
+
+5 - Ciclo de vida dos arquivos no Git
+
+git init - criar a pasta .git e inicializa um conceito do git chamado repositório. Cria um repositório do git na pasta que foi executado o comando
+
+Tracked: Arquivos rastreados, que o git tem ciência deles. Se subdividi em 3 estágios diferentes
+Unmodifed: arquivo que ainda não foi modificado
+Modified: arquivo que foi modificado
+Staged: É onde fica os arquivos que estão se preparando para poder fazer parte de outro tipo de agrupamento
+
+Untracked: arquivos que o git ainda não tem ciência.
+
+Exemplo de ciclo de vida ----
+Usar o git add: tinha um arquivo que estava untracked por ser novo. O git add moveu de untracked direto para staged.
+
+Ao editar um arquivo que ainda não foi modificado: Ao mudar o arquivo, o SHA1 de ambos vai ser diferente, assim o git vai saber que foi alterado, e vai mudar o estado para Modified. E ao executar git add ele vai para Staged para aguardar.
+
+Se a gente tem um arquivo Unmodified e a gente remove ele, ele vai para Untracked.
+
+Quando os arquivos estão em Staged, eles estão aguardando para fazer parte de um objeto Commit e depois de executar um commit volta para Unmodified. Ele retorna para unmodified pq o commit vai fazer um snapshot, meio que tirar uma foto naquele exato momento do código, que fica salvo dentro do commit
+
+Fim dos exemplos ------------
+
+As versões no meu github e no meu servidor de desenvolvimento local não são os mesmos. Durante o dev, vou ficar entre o Repositório de Trabalho e a Staging Area (enquanto na modificação e add de arquivos). Quando faz o commit, ele passa a integrar meu repositório local e o repositório local por sua vez pode ser empurrado para um repositório remoto. Quando faz isso meus arquivos passam do estágio Staged para Unmodified
+(ambiente-de-desenvolvimento-servidor.PNG)
+
+git status -> indica o status atual dos arquivos (untracked ou tracked(modified,staged))
+
+- mv strongonoff.md ./livro-receitas/ -> para mover o arquivo para a determinada pasta
+
+- git restore --staged <file> -> voltar o git add
+
+6 - Introdução ao GitHub --------------------------------------------
+
+- git config --list -> lista todas as configurações do git
+
+- git config --global --unset user.email -> retira o valor que está nas configurações do campo email
+- git config --global --unset user.nickname -> retira o valor que está nas configurações do campo nickname
+
+- git config --global user.email "algumemail@hotmail.com" -> seta um email nas configurações
+- git config --global user.nickname "algumNickname" -> seta um nickname nas configurações
+
+- git remote add origin https://github.com/brunozupp/livro-receitas.git -> aponta para o servidor do github do meu repositório
+
+- git remote -v -> vai listar as listas de repositórios que eu tenho cadastrado
+
+- git branch -M main -> muda para a branch de nome main
+
+- git push origin main -> manda o commit para o github
+
+ - Resolvendo conflitos ---------------------------------------------
+
+conflito de merge: quando o github tenta juntar duas alterações e existem duas alterações na mesma linha. O github não vai editar nada.
+Ele vai deixar que eu abra isso/o arquivo que ocorreu a alteração na mesma linha e resolva manualmente e depois mande o código para o github
+
+- git clone <link do repositório> -> vai clonar o determinado repositório
+quando clona um projeto ele já vem como um repositório, não precisa inicializar. Dentro dele já tem a pasta .git (que tem o versionamento e o redirecimento).
+

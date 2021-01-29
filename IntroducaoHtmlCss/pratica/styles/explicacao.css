@@ -1,0 +1,98 @@
+/* Parte do padding - 3 formas de fazer */
+
+.post {
+    padding: 10px 5px; /* 10px - top and bottom | 5px right and left */
+}
+
+.post {
+    /* 15px para o topo, 10px para a direita, 5px para a parte inferior e 0px para o lado esquerdo */
+    padding: 15px 10px 5px 0;
+}
+
+.post {
+    padding-top: 15px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-left: 0;
+}
+
+/* Background */
+
+.post {
+    background-color: green;
+    background-image: url("algum-link-imagem.com.br");
+    background-position: top;
+}
+
+/* Jeitos de executar o background */
+.post {
+    background-color: green;
+    background-color: #008800;
+    background: #008800;
+}
+
+/* Bordas */
+.post {
+    border: 3px solid blue;
+    border-top: 2px dotted green; /* varios pontos */
+    border-right: 4px dashed pink; /* pontilhado */
+}
+
+.post {
+    border-top: 2px dotted green;
+    border-right: 4px dashed pink;
+    border-bottom: 1px solid purple;
+    border-left: 4px dotted cyan;
+}
+
+/* Se não querer usar a propriedade border, pode ser propriedades específicas*/
+.post {
+    border: 3px solid #505050;
+}
+
+.post {
+    border-width: 3px;
+    border-color: #505050;
+    border-style: solid;
+}
+
+/* propriedades específicas de acordo com o lado */
+.post {
+    border-top-width: 3px;
+    border-top-color: #505050;
+    border-top-style: solid;
+}
+
+/* border-radius permite arredondar os cantos de um elemento */
+
+/* text-transform permite alterar de maiusculo para minusculo e vice-versa. E serve para colocar todas as 
+primeiras letras em maiusculo (capitalize) */
+
+/* text-decoration: usado para dar destaque em algum texto (underline, overline, line-through) */
+
+/* Alterando o tipo de indice para listas */
+
+ul {
+    list-style-type: square; /*  quadrado */
+}
+
+ol {
+    list-style-type: upper-roman; /* algarismo romano maisuculo */
+}
+
+ul {
+    list-style-type: "\1F44D"; /* emoji de um joinha */
+}
+
+/* pode ser usado imagem no marcador */
+ul {
+    list-style-image: url("url da imagem");
+}
+
+
+
+
+
+
+
+

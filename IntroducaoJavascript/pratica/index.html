@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução ao javascript</title>
+</head>
+<body onload="load()">
+
+    <h1 id="mouseovertitle">Título da página</h1>
+
+    <h2 id="subtitulo" 
+        onmouseover="subtitulomouseover(this)"
+        onmouseout="subtitulomouseout(this)"
+        >Subtitulo para ser verificado</h2>
+    
+
+    <button type="button" onclick="botao()">Clique aqui</button>
+    <h3 id="agradecimento"></h3>
+    <p id="voltesempre"></p>
+    <p id="voltesempre2"></p>
+
+    <button onclick="redirecionarGlobo()">Globo.com</button>
+
+    <input type="text" onchange="digitando(this)">
+    <p id="digitado"></p>
+
+    <select onchange="funcaoChange(this)">
+        <option value="">Selecione</option>
+        <option value="maça">maça</option>
+        <option value="uva">uva</option>
+        <option value="pera">pera</option>
+    </select>
+
+    <p id="fruta"></p>
+    
+    <script src="../pratica/js/main.js"></script>
+</body>
+</html>

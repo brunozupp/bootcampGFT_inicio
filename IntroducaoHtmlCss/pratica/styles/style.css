@@ -1,0 +1,66 @@
+body {
+    background: #f7f7f7;
+    font-family: Verdana;
+    max-width: 900px; /* vai ter até 900px, se a tela for menor vai se adaptar */
+    margin: auto; /* O body vai para o centro, não quer dizer que todos os elementos estão centralizados,
+    apenas que o body será centralizado ao meio*/
+}
+
+.perfil_image {
+    width: 100px; 
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid #505050;
+}
+
+#main-title {
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: line-through;
+    color: #505050
+}
+
+#main-title, .subtitle, .post_title {
+    color: #505050;
+}
+
+.post_title {
+    font-size: 16px;
+    font-style: italic;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.post {
+    background: white;
+    padding: 15px;
+    border: 3px solid #505050;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.post_content {
+    margin: 0;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.post_image {
+    width: 600px; 
+    height: 250px;
+    margin-bottom: 15px;
+    width: 100%; /* 100% em relação ao elemento pai da classe post_image */
+}
+
+.contacts_list {
+    list-style-type: none;
+    padding-left: 15px;
+}
+
+.contacts_list li a {
+    text-decoration: none;
+}

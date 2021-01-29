@@ -1,0 +1,8 @@
+- Linguagem de script e multiplataforma
+script pq consegue ser executada em tempo real
+
+- Client Side - É executado do lado do cliente
+
+- DOM - Document Object Model
+Esse objeto é gerado quando o navegador carrega a página. Modelo de árvores. Por conta dele o js
+consegue alterar e interagir com todos os elementos da página (elemento/css)
