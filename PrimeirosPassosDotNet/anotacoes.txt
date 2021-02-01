@@ -1,0 +1,113 @@
+.NET Standard Library - é como se fosse um contrato
+
+F# - Uma orienteção mais funcional
+
+-----------------------------------------------------------
+
+.Net SDK - Vem com ferramentas preparadas para o código fonte seja convertida até a linguagem de maquina
+
+Runtime - versão mais enxuta - seria mais para ambiente de produção
+
+O VSCode não seja a ser uma IDEA, ele é um editor de texto
+
+-----------------------------------------------------------
+
+dotnet --help - vai me dar uma documentação da interface do dotnet na linha de comando
+
+dotnet build - compila a linguagem e vai jogar em CLR e vai gerar em DLL que vão ser executadas depois
+
+nuget - gerenciador de pacotes para o .NET
+
+dotnet new --help -> vai trazer a documentação do dotnet new
+
+nuget source -> se tem um nuget privado
+
+-----------------------------------------------------------
+
+dotnet new console -n MeuProjeto
+
+Se eu não especificar a versão, vai pegar a última que eu tenho instalado
+
+Pasta obj - cria a pasta no momento do build da aplicação (possui artefatos que são usados no momento da execução)
+
+code . - Abre o VSCode apontando para a pasta atual onde o cmd está apontando
+
+pasta bin - binarios da aplicação
+
+dotnet restore - restaura os pacotes (Baixa os pacotes e atualiza caso necessário. São os arquivos descritos naquele arquivo que aparece quando eu clico na aplicação .csproj)
+
+dotnet build - pega o código escrito em C#, compila e gera a linguagem intermediária (.exe ou .dll)
+A dll é código compilado numa linguagem intermediária
+
+Independente da linguagem, vai ficar igual para todas as linguagens essa dll gerada
+
+Arquivo .pdb - ponto de debug que eu tenho na aplicação
+
+dotnet run - restaura os pacotes, executar um build e depois executa
+
+Precisa estar no nível do arquivo .csproj para rodar o dotnet run
+
+// Assim funciona, para o run precisa usar o -p
+dotnet build NomeDoProjetoQuemTemO.csproj
+dotnet run -p NomeDoProjetoQuemTemO.csproj
+
+-----------------------------------------------------------
+
+Modulo 3
+
+Linguagem que começou a ser criada no final da década de 90, junto ao .NET, no começo dos anos 2000
+
+Os principais conceitos organizacionais em C# são:
+- Programas: o projeto em si (console, webapp, etc)
+- Namespaces: podem ter tipos e membros
+- Tipos:
+- Membros:
+- Assemblies: as dll
+
+F10 ("step over") does not descend any further into the call stack. It moves to the next line of the current function. F11 ("step into") drills down into the function being called. If you hit a breakpoint on function2() , F10 will advance to the line function3()
+
+-----------------------------------------------------------
+
+Tipos de valor
+
+Númericos: sbyte, short, int, long, byte, unshort, unit, ulong
+Caracteres Unicode: char
+Pontos flutuantes: float, double, decimal
+Booleano: bool
+Outros: Enum, struct e tipos nullable (Exemplo int?)
+
+Tipos de referência
+Tipos classe: class, object, string
+Tipos arrays: int[], int[,], etc...
+Outros: interface, delegate
+
+Inicializar arrays
+
+int[] numeros = new int[5] {1, 2, 3, 4, 5};
+string[] nomes = new string[3] {"Mac", "Jessica", "MiMi"};
+
+int[] numeros = new int[] {1, 2, 3, 4, 5};
+string[] nomes = new string[] {Mac", "Jessica", "MiMi"};
+
+int[] numeros = {1, 2, 3, 4, 5};
+string[] nomes = {"Mac", "Jessica", "MiMi"};
+
+-----------------------------------------------------------
+
+Acessibilidade
+
+public: pode ser acessado de qualquer parte do código.
+
+protected: só podem alterar as classes que herdam da classe que está com protected.
+
+internal: só é acessado de dentro do assembly que faz parte. Assembly é o csproj que está contido o projeto
+Se eu tenho um projeto 1 que tem membros internal, e eu tenho um projeto 2 que pega as referencias desse
+projeto 1, não vai conseguir acessar os métodos com internal.
+
+private: só é acessado único e exclusivamente dentro da classe que está mantido
+
+-----------------------------------------------------------
+
+Alocação de heap -> o local da memória onde o meu dado está, local esse que é apontado pelos tipos
+referência.
+A variável em si está numa parte da memória chamada Stack

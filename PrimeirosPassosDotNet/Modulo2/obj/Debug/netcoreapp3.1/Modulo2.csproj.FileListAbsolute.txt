@@ -1,0 +1,13 @@
+C:\Users\bruni\Desktop\DigitalInnovationOne\BootcampGFT\PrimeirosPassosDotNet\Modulo2\bin\Debug\netcoreapp3.1\Modulo2.exe
+C:\Users\bruni\Desktop\DigitalInnovationOne\BootcampGFT\PrimeirosPassosDotNet\Modulo2\bin\Debug\netcoreapp3.1\Modulo2.deps.json
+C:\Users\bruni\Desktop\DigitalInnovationOne\BootcampGFT\PrimeirosPassosDotNet\Modulo2\bin\Debug\netcoreapp3.1\Modulo2.runtimeconfig.json
+C:\Users\bruni\Desktop\DigitalInnovationOne\BootcampGFT\PrimeirosPassosDotNet\Modulo2\bin\Debug\netcoreapp3.1\Modulo2.runtimeconfig.dev.json
+C:\Users\bruni\Desktop\DigitalInnovationOne\BootcampGFT\PrimeirosPassosDotNet\Modulo2\bin\Debug\netcoreapp3.1\Modulo2.dll
+C:\Users\bruni\Desktop\DigitalInnovationOne\BootcampGFT\PrimeirosPassosDotNet\Modulo2\bin\Debug\netcoreapp3.1\Modulo2.pdb
+C:\Users\bruni\Desktop\DigitalInnovationOne\BootcampGFT\PrimeirosPassosDotNet\Modulo2\obj\Debug\netcoreapp3.1\Modulo2.csprojAssemblyReference.cache
+C:\Users\bruni\Desktop\DigitalInnovationOne\BootcampGFT\PrimeirosPassosDotNet\Modulo2\obj\Debug\netcoreapp3.1\Modulo2.AssemblyInfoInputs.cache
+C:\Users\bruni\Desktop\DigitalInnovationOne\BootcampGFT\PrimeirosPassosDotNet\Modulo2\obj\Debug\netcoreapp3.1\Modulo2.AssemblyInfo.cs
+C:\Users\bruni\Desktop\DigitalInnovationOne\BootcampGFT\PrimeirosPassosDotNet\Modulo2\obj\Debug\netcoreapp3.1\Modulo2.csproj.CoreCompileInputs.cache
+C:\Users\bruni\Desktop\DigitalInnovationOne\BootcampGFT\PrimeirosPassosDotNet\Modulo2\obj\Debug\netcoreapp3.1\Modulo2.dll
+C:\Users\bruni\Desktop\DigitalInnovationOne\BootcampGFT\PrimeirosPassosDotNet\Modulo2\obj\Debug\netcoreapp3.1\Modulo2.pdb
+C:\Users\bruni\Desktop\DigitalInnovationOne\BootcampGFT\PrimeirosPassosDotNet\Modulo2\obj\Debug\netcoreapp3.1\Modulo2.genruntimeconfig.cache
