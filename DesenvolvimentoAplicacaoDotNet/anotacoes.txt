@@ -1,0 +1,7 @@
+Add-Migration InitialCreate -> criar uma migration
+
+Update-Database
+
+A partir da versão 3.0, é preciso habilitar o EF para o projeto que vai fazer deploy,
+pois a partir dessa versão não vem mais junto na SDK do core (só assim pra funcionar)
+as migrations
