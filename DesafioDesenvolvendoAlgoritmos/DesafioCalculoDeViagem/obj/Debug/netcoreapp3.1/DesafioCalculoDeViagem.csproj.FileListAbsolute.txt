@@ -1,0 +1,13 @@
+C:\Users\bruni\Desktop\DigitalInnovationOne\BootcampGFT\DesafioDesenvolvendoAlgoritmos\DesafioCalculoDeViagem\bin\Debug\netcoreapp3.1\DesafioCalculoDeViagem.exe
+C:\Users\bruni\Desktop\DigitalInnovationOne\BootcampGFT\DesafioDesenvolvendoAlgoritmos\DesafioCalculoDeViagem\bin\Debug\netcoreapp3.1\DesafioCalculoDeViagem.deps.json
+C:\Users\bruni\Desktop\DigitalInnovationOne\BootcampGFT\DesafioDesenvolvendoAlgoritmos\DesafioCalculoDeViagem\bin\Debug\netcoreapp3.1\DesafioCalculoDeViagem.runtimeconfig.json
+C:\Users\bruni\Desktop\DigitalInnovationOne\BootcampGFT\DesafioDesenvolvendoAlgoritmos\DesafioCalculoDeViagem\bin\Debug\netcoreapp3.1\DesafioCalculoDeViagem.runtimeconfig.dev.json
+C:\Users\bruni\Desktop\DigitalInnovationOne\BootcampGFT\DesafioDesenvolvendoAlgoritmos\DesafioCalculoDeViagem\bin\Debug\netcoreapp3.1\DesafioCalculoDeViagem.dll
+C:\Users\bruni\Desktop\DigitalInnovationOne\BootcampGFT\DesafioDesenvolvendoAlgoritmos\DesafioCalculoDeViagem\bin\Debug\netcoreapp3.1\DesafioCalculoDeViagem.pdb
+C:\Users\bruni\Desktop\DigitalInnovationOne\BootcampGFT\DesafioDesenvolvendoAlgoritmos\DesafioCalculoDeViagem\obj\Debug\netcoreapp3.1\DesafioCalculoDeViagem.csprojAssemblyReference.cache
+C:\Users\bruni\Desktop\DigitalInnovationOne\BootcampGFT\DesafioDesenvolvendoAlgoritmos\DesafioCalculoDeViagem\obj\Debug\netcoreapp3.1\DesafioCalculoDeViagem.AssemblyInfoInputs.cache
+C:\Users\bruni\Desktop\DigitalInnovationOne\BootcampGFT\DesafioDesenvolvendoAlgoritmos\DesafioCalculoDeViagem\obj\Debug\netcoreapp3.1\DesafioCalculoDeViagem.AssemblyInfo.cs
+C:\Users\bruni\Desktop\DigitalInnovationOne\BootcampGFT\DesafioDesenvolvendoAlgoritmos\DesafioCalculoDeViagem\obj\Debug\netcoreapp3.1\DesafioCalculoDeViagem.csproj.CoreCompileInputs.cache
+C:\Users\bruni\Desktop\DigitalInnovationOne\BootcampGFT\DesafioDesenvolvendoAlgoritmos\DesafioCalculoDeViagem\obj\Debug\netcoreapp3.1\DesafioCalculoDeViagem.dll
+C:\Users\bruni\Desktop\DigitalInnovationOne\BootcampGFT\DesafioDesenvolvendoAlgoritmos\DesafioCalculoDeViagem\obj\Debug\netcoreapp3.1\DesafioCalculoDeViagem.pdb
+C:\Users\bruni\Desktop\DigitalInnovationOne\BootcampGFT\DesafioDesenvolvendoAlgoritmos\DesafioCalculoDeViagem\obj\Debug\netcoreapp3.1\DesafioCalculoDeViagem.genruntimeconfig.cache

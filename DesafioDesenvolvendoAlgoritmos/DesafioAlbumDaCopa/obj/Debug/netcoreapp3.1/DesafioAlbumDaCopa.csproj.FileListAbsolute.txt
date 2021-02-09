@@ -1,0 +1,13 @@
+C:\Users\bruni\Desktop\DigitalInnovationOne\BootcampGFT\DesafioDesenvolvendoAlgoritmos\DesafioAlbumDaCopa\bin\Debug\netcoreapp3.1\DesafioAlbumDaCopa.exe
+C:\Users\bruni\Desktop\DigitalInnovationOne\BootcampGFT\DesafioDesenvolvendoAlgoritmos\DesafioAlbumDaCopa\bin\Debug\netcoreapp3.1\DesafioAlbumDaCopa.deps.json
+C:\Users\bruni\Desktop\DigitalInnovationOne\BootcampGFT\DesafioDesenvolvendoAlgoritmos\DesafioAlbumDaCopa\bin\Debug\netcoreapp3.1\DesafioAlbumDaCopa.runtimeconfig.json
+C:\Users\bruni\Desktop\DigitalInnovationOne\BootcampGFT\DesafioDesenvolvendoAlgoritmos\DesafioAlbumDaCopa\bin\Debug\netcoreapp3.1\DesafioAlbumDaCopa.runtimeconfig.dev.json
+C:\Users\bruni\Desktop\DigitalInnovationOne\BootcampGFT\DesafioDesenvolvendoAlgoritmos\DesafioAlbumDaCopa\bin\Debug\netcoreapp3.1\DesafioAlbumDaCopa.dll
+C:\Users\bruni\Desktop\DigitalInnovationOne\BootcampGFT\DesafioDesenvolvendoAlgoritmos\DesafioAlbumDaCopa\bin\Debug\netcoreapp3.1\DesafioAlbumDaCopa.pdb
+C:\Users\bruni\Desktop\DigitalInnovationOne\BootcampGFT\DesafioDesenvolvendoAlgoritmos\DesafioAlbumDaCopa\obj\Debug\netcoreapp3.1\DesafioAlbumDaCopa.csprojAssemblyReference.cache
+C:\Users\bruni\Desktop\DigitalInnovationOne\BootcampGFT\DesafioDesenvolvendoAlgoritmos\DesafioAlbumDaCopa\obj\Debug\netcoreapp3.1\DesafioAlbumDaCopa.AssemblyInfoInputs.cache
+C:\Users\bruni\Desktop\DigitalInnovationOne\BootcampGFT\DesafioDesenvolvendoAlgoritmos\DesafioAlbumDaCopa\obj\Debug\netcoreapp3.1\DesafioAlbumDaCopa.AssemblyInfo.cs
+C:\Users\bruni\Desktop\DigitalInnovationOne\BootcampGFT\DesafioDesenvolvendoAlgoritmos\DesafioAlbumDaCopa\obj\Debug\netcoreapp3.1\DesafioAlbumDaCopa.csproj.CoreCompileInputs.cache
+C:\Users\bruni\Desktop\DigitalInnovationOne\BootcampGFT\DesafioDesenvolvendoAlgoritmos\DesafioAlbumDaCopa\obj\Debug\netcoreapp3.1\DesafioAlbumDaCopa.dll
+C:\Users\bruni\Desktop\DigitalInnovationOne\BootcampGFT\DesafioDesenvolvendoAlgoritmos\DesafioAlbumDaCopa\obj\Debug\netcoreapp3.1\DesafioAlbumDaCopa.pdb
+C:\Users\bruni\Desktop\DigitalInnovationOne\BootcampGFT\DesafioDesenvolvendoAlgoritmos\DesafioAlbumDaCopa\obj\Debug\netcoreapp3.1\DesafioAlbumDaCopa.genruntimeconfig.cache
